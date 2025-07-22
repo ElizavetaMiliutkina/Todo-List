@@ -2,7 +2,6 @@
   <div class="todo-list">
     <div v-if="!loading">
       <input
-          class="add-input"
           v-model="newTask"
           @keyup.enter="addTask"
           placeholder="Добавить задачу по нажатию на Enter"
@@ -142,13 +141,6 @@ const addTask = () => {
 
 <style scoped lang="scss">
 .todo-list{
-  text-align: center;
-
-  .add-input{
-    box-sizing: border-box;
-    width: 100%;
-  }
-
   .container {
     display: flex;
     gap: 20px;

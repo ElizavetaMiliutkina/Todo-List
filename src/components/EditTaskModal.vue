@@ -7,7 +7,7 @@
         <input v-model="localTitle" class="edit-input" />
         <div class="modal-buttons">
           <button @click="$emit('cancel')">Отмена</button>
-          <button @click="save" :disabled="props.updating">Сохранить</button>
+          <button @click="save" :disabled="props.updating || !localTitle">Сохранить</button>
         </div>
       </div>
     </div>
@@ -58,6 +58,15 @@ const save = () => {
     border-radius: 8px;
     min-width: 300px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 10px;
+    }
   }
 }
 </style>
