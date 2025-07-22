@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import { computed, onMounted } from 'vue';
 import { useStore } from 'vuex';
-import TodoList from '@/components/TodoList.vue';
+import TodoList from '@/components/TodoList/TodoList.vue';
 
 import type { Task } from '@/types/task';
 
