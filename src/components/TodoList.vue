@@ -52,13 +52,15 @@
     <div v-else>
        Загрузка...
     </div>
-    <EditTaskModal
-        :visible="isModalOpen"
-        :task="taskToEdit"
-        :updating="props.updating"
-        @save="saveEdit"
-        @cancel="closeModal"
-    />
+    <teleport to="body">
+      <EditTaskModal
+          :visible="isModalOpen"
+          :task="taskToEdit"
+          :updating="props.updating"
+          @save="saveEdit"
+          @cancel="closeModal"
+      />
+    </teleport>
   </div>
 </template>
 

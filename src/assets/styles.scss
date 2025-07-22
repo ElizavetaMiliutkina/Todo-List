@@ -28,11 +28,13 @@ body {
     cursor: not-allowed;
     opacity: 0.6;
   }
+
+  .error-block {
+    text-align: center;
+    background: #ff00002e;
+    padding: 20px;
+    border-radius: 5px;
+  }
 }
 
-.error-block {
-  text-align: center;
-  background: #ff00002e;
-  padding: 20px;
-  border-radius: 5px;
-}
+

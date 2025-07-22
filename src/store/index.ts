@@ -105,6 +105,5 @@ export default createStore<TaskState>({
             }
             commit('setUpdating', false);
         },
-
     },
 });
