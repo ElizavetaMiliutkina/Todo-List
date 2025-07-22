@@ -21,8 +21,8 @@ npm run serve
 npm run lint
 ```
 ## Структура проекта
-- `src/components/` — Vue-компоненты (TodoList и др.)
-- `src/store/` — Vuex store (логика задач)
+- `src/components/` — Vue-компоненты (TodoList)
+- `src/store/` — Vuex store
 - `src/types/` — глобальные типы TypeScript
 - `src/assets/` — глобальные стили SCSS
 - `src/App.vue` — корневой компонент
