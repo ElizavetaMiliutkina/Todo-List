@@ -19,16 +19,16 @@ export default createStore<TaskState>({
         setUpdating(state: TaskState, isUpdating: TaskState['isUpdating']) {
             state.isUpdating = isUpdating;
         },
-        updateTask(state, updatedTask: Task) {
+        updateTask(state: TaskState, updatedTask: Task) {
             const index = state.tasks.findIndex(t => t.id === updatedTask.id);
             if (index !== -1) {
                 state.tasks[index] = updatedTask;
             }
         },
-        deleteTask(state, id: number) {
+        deleteTask(state: TaskState, id: number) {
             state.tasks = state.tasks.filter(task => task.id !== id);
         },
-        setError(state, error: string | null) {
+        setError(state: TaskState, error: string | null) {
             state.error = error;
         },
     },
